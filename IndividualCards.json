@@ -1,0 +1,55 @@
+[{
+        "id": 1,
+        "alt": "ojo",
+        "texto": "ROJO",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 2,
+        "alt": "ojo",
+        "texto": "VIDA",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 3,
+        "alt": "ojo",
+        "texto": "SANGRE",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 4,
+        "alt": "ojo",
+        "texto": "AMOR",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 5,
+        "alt": "ojo",
+        "texto": "HUMANO",
+        "video": "/anima-concupiscibilis/imagenes/megagif.mp4"
+    },
+    {
+        "id": 6,
+        "alt": "ojo",
+        "texto": "VIOLENCIA",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 7,
+        "alt": "ojo",
+        "texto": "SEXO",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 8,
+        "alt": "ojo",
+        "texto": "PASIÓN",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    },
+    {
+        "id": 9,
+        "alt": "ojo",
+        "texto": "CARNE",
+        "img": "/anima-concupiscibilis/imagenes/ojopiojo.gif"
+    }
+]
