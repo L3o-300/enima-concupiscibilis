@@ -1,30 +1,40 @@
-export async function fetchPhrase() {
-  try {
-    // Use a relative path so the dev server proxy (vite) can forward the request
-    // to the external API and avoid CORS while developing.
-    const res = await fetch('/api/phrase');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+export const frases = [
+{
+autor: "Sócrates",
+texto: "Conócete a ti mismo."
+},
+{
+autor: "Platón",
+texto: "El alma toma el color de aquello que contempla."
+},
+{
+autor: "Aristóteles",
+texto: "Conocerse a uno mismo es el comienzo de toda sabiduría."
+},
+{
+autor: "Marco Aurelio",
+texto: "Mira dentro de ti: en tu interior está la fuente del bien."
+},
+{
+autor: "San Agustín",
+texto: "No salgas fuera, vuelve a ti mismo; en el interior del hombre habita la verdad."
+},
+{
+autor: "Nietzsche",
+texto: "Quien tiene un porqué para vivir puede soportar casi cualquier cómo."
+},
+{
+autor: "Hermann Hesse",
+texto: "Cuando alguien busca, es fácil que sus ojos solo vean aquello que busca."
+},
+{
+autor: "Antoine de Saint-Exupéry",
+texto: "Lo esencial es invisible a los ojos."
+}
+];
 
-    // Try to detect if the response is JSON, otherwise return text
-    const contentType = res.headers.get('content-type') || '';
-    if (contentType.includes('application/json')) {
-      const json = await res.json();
-      // Expect json to be { phrase: '...', author: '...' } or similar
-      return json;
-    }
 
-    // Fallback: text response. The API might sometimes return a JSON-like string.
-    const txt = (await res.text()).trim();
-    if (txt.startsWith('{')) {
-      try {
-        return JSON.parse(txt);
-      } catch (_) {
-        // invalid JSON — return raw string
-      }
-    }
-    return { phrase: txt, author: null };
-  } catch (err) {
-    console.error('fetchPhrase error', err);
-    return null;
-  }
+export function obtenerFraseAleatoria() {
+const index = Math.floor(Math.random() * frases.length);
+return frases[index];
 }
